@@ -1,0 +1,12 @@
+[
+  {
+    "id": "how2sign-sentence",
+    "kind": "sentence",
+    "name": "Continuous ASL sentence",
+    "path": "how2sign-sentence.mp4",
+    "source_url": "https://imatge-upc.github.io/slt_how2sign_wicv2023/assets/example_1_slt.mp4",
+    "source_page": "https://imatge-upc.github.io/slt_how2sign_wicv2023/",
+    "license": "How2Sign research sample, CC BY-NC 4.0.",
+    "changes": "Bottom reference text cropped; original frame timing preserved; audio removed."
+  }
+]

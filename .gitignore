@@ -7,8 +7,8 @@ __pycache__/
 .runtime/
 *.log
 
-# Third-party evaluation checkout, pretrained weights and sample videos stay local.
-# Their redistribution rights have not been granted to this application.
+# Third-party evaluation checkout and pretrained weights stay local.
+# The authorized sentence demo below is intentionally published for the public demo.
 research/
 samples/
 *.mp4
@@ -17,6 +17,11 @@ samples/
 *.wav
 *.npz
 *.task
+
+!research/
+!research/samples/
+!research/samples/*.mp4
+!research/samples/*.json
 
 # Machine-specific settings and secrets
 .env
