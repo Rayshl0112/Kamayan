@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: kamayan
+    name: kamayan-na
     runtime: python
     plan: free
     buildCommand: npm ci && npm run build && python -m pip install -r backend/requirements-render.txt
