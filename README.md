@@ -1,3 +1,5 @@
+# **[Visit our website](https://kamayan-na.onrender.com/)**
+
 # kamayan.
 
 Every Sign Connects.
@@ -5,6 +7,8 @@ Every Sign Connects.
 The current app is a lightweight **static sentence-caption demo**, following the user's change of plan. It displays the supplied sentence video's exact reference English on the right and an authored Filipino translation on the left. Both build into complete sentences as the video plays. **Play translated text** reads the full English sentence with an offline Windows voice.
 
 No ASL model loads at startup or during playback. Webcam recording is a visible placeholder. These are prewritten, timed captions; this version does not automatically translate arbitrary signing videos.
+
+
 
 ## Start
 
