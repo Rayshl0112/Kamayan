@@ -1,0 +1,26 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.runtime/
+*.log
+
+# Third-party evaluation checkout, pretrained weights and sample videos stay local.
+# Their redistribution rights have not been granted to this application.
+research/
+samples/
+*.mp4
+*.webm
+*.mov
+*.wav
+*.npz
+*.task
+
+# Machine-specific settings and secrets
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

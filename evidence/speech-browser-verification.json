@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": [
+    "Installed local SAPI voice appears in the app",
+    "Speech button receives real WAV bytes, decodes audible PCM and advances local audio playback",
+    "Stop speech pauses and resets audio",
+    "Audio download saves the actual locally synthesized WAV",
+    "Changing speed invalidates the cached WAV; the next download contains faster synthesized speech"
+  ],
+  "playback": {
+    "blobBytes": 265046,
+    "header": "RIFF",
+    "duration": 6.00907,
+    "decodedDuration": 6.0090625,
+    "currentTime": 0.141633,
+    "readyState": 4,
+    "paused": false,
+    "amplitude": 0.6147856712341309,
+    "sampleRate": 48000
+  },
+  "stopped": {
+    "paused": true,
+    "currentTime": 0
+  },
+  "fasterDuration": 3.3937414965986394,
+  "voices": [
+    "Microsoft David Desktop",
+    "Microsoft Zira Desktop"
+  ],
+  "pageErrors": [],
+  "blockedExternalRequests": [],
+  "network": "External browser requests denied; loopback and local blob URLs only"
+}

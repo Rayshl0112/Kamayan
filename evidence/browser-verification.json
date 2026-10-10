@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": [
+    "Mint studio loads with real local model and local voices; remote browser requests blocked",
+    "Vocabulary search reflects model labels",
+    "Downloaded real MP4 plays, pauses, seeks and segment start marks",
+    "Real ensemble recognizes computer from video pixels, explicit confirmation updates transcript",
+    "Offline speech button returns actual WAV and browser decodes/plays local audio",
+    "Manual word, undo and TXT download preserve transcript",
+    "Selected segment recognition returns real predictions",
+    "Desktop transcript is right of video, speech below text, Apple system font stack configured",
+    "Mobile layout has no horizontal overflow; browser has no runtime errors"
+  ],
+  "audioState": {
+    "duration": 1.489297,
+    "currentTime": 0,
+    "readyState": 4
+  },
+  "positions": {
+    "video": 256,
+    "text": 979.4375,
+    "font": "-apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"SF Pro Text\", \"Segoe UI\", Helvetica, Arial, sans-serif"
+  },
+  "pageErrors": [],
+  "remoteRequests": [],
+  "network": "All external browser requests denied; loopback allowed"
+}

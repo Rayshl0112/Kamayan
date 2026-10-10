@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "checks": [
+    "Minimal upload home; webcam action is a placeholder and requests no camera access",
+    "Static English and Filipino captions build into full sentences and follow video seeking",
+    "Large video shows lyric-style English on the right, Filipino on the left, speech play beneath English",
+    "Play translated text speaks the entire English sentence using actual advancing offline WAV playback",
+    "Mobile layout fits the screen and no browser runtime errors occur"
+  ],
+  "position": {
+    "video": {
+      "x": 54,
+      "y": 90,
+      "width": 1332,
+      "height": 749.25,
+      "right": 1386,
+      "bottom": 839.25
+    },
+    "english": {
+      "x": 988.5,
+      "y": 262.859375,
+      "width": 330,
+      "height": 302,
+      "right": 1318.5,
+      "bottom": 564.859375
+    },
+    "filipino": {
+      "x": 114.84375,
+      "y": 262.859375,
+      "width": 340,
+      "height": 290.09375,
+      "right": 454.84375,
+      "bottom": 552.953125
+    },
+    "text": {
+      "x": 988.5,
+      "y": 297.344482421875,
+      "width": 330,
+      "height": 171.625,
+      "right": 1318.5,
+      "bottom": 468.969482421875
+    },
+    "speech": {
+      "x": 988.5,
+      "y": 492.671875,
+      "width": 175.875,
+      "height": 40,
+      "right": 1164.375,
+      "bottom": 532.671875
+    }
+  },
+  "audio": {
+    "duration": 4.183764,
+    "time": 0.205615,
+    "bytes": 184550,
+    "header": "RIFF"
+  },
+  "errors": [],
+  "staticCaptionDemo": true,
+  "aiInference": false,
+  "network": "External browser requests denied"
+}

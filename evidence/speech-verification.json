@@ -1,0 +1,54 @@
+{
+  "speech_status": {
+    "available": true,
+    "offline": true,
+    "engine": "Windows SAPI / System.Speech",
+    "default_voice": "Microsoft Zira Desktop",
+    "voices": [
+      {
+        "local": true,
+        "culture": "en-US",
+        "name": "Microsoft David Desktop",
+        "gender": "Male"
+      },
+      {
+        "local": true,
+        "culture": "en-US",
+        "name": "Microsoft Zira Desktop",
+        "gender": "Female"
+      }
+    ],
+    "rate_min": 0.5,
+    "rate_max": 2.0,
+    "max_text_length": 4000
+  },
+  "actual_wav_measurements": [
+    {
+      "rate": 0.7,
+      "duration_seconds": 8.269,
+      "sample_rate": 22050,
+      "channels": 1,
+      "bytes": 364704,
+      "generation_seconds": 6.344
+    },
+    {
+      "rate": 1.0,
+      "duration_seconds": 6.009,
+      "sample_rate": 22050,
+      "channels": 1,
+      "bytes": 265046,
+      "generation_seconds": 0.78
+    },
+    {
+      "rate": 1.5,
+      "duration_seconds": 3.394,
+      "sample_rate": 22050,
+      "channels": 1,
+      "bytes": 149710,
+      "generation_seconds": 0.897
+    }
+  ],
+  "tested_text": "Help. Yes. Learn. Every sign connects.",
+  "wav_evidence": "evidence/offline-speech.wav",
+  "test_result": "7 unittest checks passed in 5.826s, including actual audible PCM signal and speed affecting output duration"
+}
