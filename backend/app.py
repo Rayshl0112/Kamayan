@@ -6,9 +6,10 @@ import tempfile
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, Response, StreamingResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from starlette.concurrency import run_in_threadpool
 
@@ -33,6 +34,14 @@ async def lifespan(app):
 
 app = FastAPI(title="Kamayan local ASL studio", lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=["http://127.0.0.1:5173", "http://localhost:5173", "http://127.0.0.1:4173", "http://localhost:4173"], allow_credentials=False, allow_methods=["GET", "POST"], allow_headers=["Content-Type"])
+
+
+@app.middleware("http")
+async def strip_api_prefix(request: Request, call_next):
+    path = request.scope["path"]
+    if path == "/api" or path.startswith("/api/"):
+        request.scope["path"] = path[4:] or "/"
+    return await call_next(request)
 
 
 @app.get("/health")
@@ -187,3 +196,6 @@ async def speak(request: SpeechRequest):
         raise HTTPException(400, str(exc)) from exc
     except RuntimeError as exc:
         raise HTTPException(503, str(exc)) from exc
+
+
+app.mount("/", StaticFiles(directory=ROOT / "dist", html=True), name="frontend")
